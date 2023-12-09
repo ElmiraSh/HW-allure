@@ -18,13 +18,13 @@ public class StepTest {
     @BeforeAll
     static void beforeAll() {
         Configuration.browserSize = "1920x1080";
-         Configuration.holdBrowserOpen = true;
+        // Configuration.holdBrowserOpen = true;
     }
 
     @Test
     @Feature("Find in VK ")
     @Story("Find in VK with LamdaStep")
-    public void LambdaTesting() {
+    public void lambdaTesting() {
         SelenideLogger.addListener("allure", new AllureSelenide());
         step("Open VK", () -> {
             open("https://vk.com/");

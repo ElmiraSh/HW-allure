@@ -15,7 +15,7 @@ public class SimpleTest {
         Configuration.holdBrowserOpen = true;
     }
 @Test
-    public void SimpleTest() {
+    public void simpleTest() {
         open("https://vk.com/");
         $(".footer_lang").$(byText("English")).click();
         $(".login_all_products_button").click();
